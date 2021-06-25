@@ -1,0 +1,173 @@
+/*******************************************
+
+Universal Styling
+
+********************************************/
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+body {
+	font-family: 'Quicksand', sans-serif;
+	color: #102d33;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Bree Serif', cursive;
+  padding: 2%;
+	color: #102d33;
+}
+
+p {
+  padding: 2%;
+}
+
+footer {
+  background: #cb8699;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 1%;
+}
+/***************************HAMBURGER MENU STYLES******************************/
+body{
+  font-family: 'Quicksand', sans-serif;
+	margin:0;
+	width:100%;
+	height:100vh;
+  background:#ffffff;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+header{
+	width:100%;
+	background: #a8314b;
+	height:60px;
+	line-height:60px;
+	border-bottom:1px solid #dddddd;
+}
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  left:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color: white;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  left: 0;
+  padding:7px 15px 0px 15px;
+  color: white;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:20%; background:#a8314b;  position:absolute; text-align: center; font-size:14px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block; background:#568492; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color: white;}
+.menu ul li a:hover {  color: #102d33; text-decoration:none;}
+.menu a{text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#666;}
+/**************************HOME PAGE STYLES************************************/
+.home {
+  background-image: url("../images/peru.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.aboutme {
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.8;
+  max-width: 50%;
+  line-height: 150%;
+  padding: 2%;
+  margin: 4%;
+}
+
+.round img {
+	max-width: 100%;
+}
+
+/******************START MIN-WIDTH 320 MEDIA QUERY********************************/
+@media (min-width: 320px) {
+
+  .aboutme {
+    max-width: 80%;
+    line-height: 150%;
+    padding: 4%;
+    margin: 15% 5% 5%;
+  }
+
+  figure {
+    max-width: 80%;
+    padding: 30% 5% 5% 8%;
+  }
+
+}
+/******************START MIN-WIDTH 660 MEDIA QUERY********************************/
+@media (min-width: 660px) {
+
+	body {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+  .aboutme {
+    max-width: 34%;
+    padding: 2%;
+    margin: 3%;
+  }
+
+	.round {
+		max-width: 45%;
+		padding: 5%;
+		margin-top: 15%;
+	}
+}
+/******************END MIN-WIDTH 660 MEDIA QUERY********************************/
+
+/******************START MIN-WIDTH 1117 MEDIA QUERY********************************/
+@media (min-width: 1117px) {
+
+	body {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.aboutme {
+		max-width: 40%;
+		max-height: 55%;
+		padding: 2%;
+		margin: 5% 2%;
+	}
+
+	.round {
+		max-width: 30%;
+		margin: 2%;
+		padding: 6%;
+	}
+}
