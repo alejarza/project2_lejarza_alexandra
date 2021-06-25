@@ -18,10 +18,23 @@ body {
 	color: #102d33;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
 	font-family: 'Bree Serif', cursive;
   padding: 2%;
 	color: #102d33;
+}
+
+h1 {
+	font-size: 1.6em;
+}
+
+h2 {
+	font-size: 1.2em;
+}
+
+h3, h4, h5, h6 {
+	color: #568492;
+	font-size: .9em;
 }
 
 p {
@@ -100,11 +113,11 @@ header{
 
 .aboutme,
 .education-left,
-.education-right {
+.education-right,
+.experience {
   background-color: #ffffff;
   border: 1px solid black;
   opacity: 0.8;
-  max-width: 50%;
   line-height: 150%;
   padding: 2%;
   margin: 4%;
@@ -114,7 +127,7 @@ header{
 	max-width: 100%;
 }
 
-/**************************EDUCATION PAGE STYLES************************************/
+/**************************EDUCATION PAGE STYLES*******************************/
 article ul li {
   margin-left: 5%;
   font-size: 1em;
@@ -130,7 +143,12 @@ article ul li {
   text-decoration: none;
 }
 
-/******************START MIN-WIDTH 320 MEDIA QUERY********************************/
+/***************************CAREER PAGE STYLES*********************************/
+.careers h3 {
+	font-family: 'Bree Serif', cursive;
+	font-style: italic;
+}
+/******************START MIN-WIDTH 320 MEDIA QUERY*****************************/
 @media (min-width: 320px) {
 
   .aboutme {
@@ -140,13 +158,13 @@ article ul li {
     margin: 15% 5% 5%;
   }
 
-  figure {
-    max-width: 80%;
-    padding: 30% 5% 5% 8%;
-  }
+	.round {
+		padding-top: 15%;
+	}
 
 	.education-left,
-	.education-right {
+	.education-right
+	.experience {
 		max-width: 90%;
 	}
 
@@ -155,8 +173,14 @@ article ul li {
 		justify-content: center;
 		margin: 2%;
 	}
+
+	.estate img {
+		max-width: 95%;
+		padding: 2%;
+		margin: 2%;
+	}
 }
-/******************START MIN-WIDTH 660 MEDIA QUERY********************************/
+/******************START MIN-WIDTH 660 MEDIA QUERY*****************************/
 @media (min-width: 660px) {
 
 	body {
@@ -180,14 +204,35 @@ article ul li {
 		display: flex;
 		justify-content: center;
 	}
-}
-/******************END MIN-WIDTH 660 MEDIA QUERY********************************/
 
-/******************START MIN-WIDTH 1117 MEDIA QUERY********************************/
+	figure {
+		max-width: 40%;
+	}
+
+	.estate img {
+		max-width: 100%;
+		margin: 2%;
+		padding-top: 45%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.experience {
+		max-width: 45%;
+		margin: 2% 0 3% 4%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+}
+/******************END MIN-WIDTH 660 MEDIA QUERY*******************************/
+
+/******************START MIN-WIDTH 1117 MEDIA QUERY****************************/
 @media (min-width: 1117px) {
 
 	body,
-	.edu-summary {
+	.edu-summary,
+	.career {
 		display: flex;
 		flex-wrap: wrap;
 	}
@@ -215,4 +260,20 @@ article ul li {
 		display: flex;
 		justify-content: center;
 	}
+
+	.estate img {
+		max-width: 100%;
+		padding: 0;
+		margin-left: 10%;
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	.experience {
+		max-width: 40%;
+		margin-left: 10%;
+		display: flex;
+		justify-content: flex-end;
+	}
+
 }
