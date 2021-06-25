@@ -98,7 +98,9 @@ header{
   width: 100%;
 }
 
-.aboutme {
+.aboutme,
+.education-left,
+.education-right {
   background-color: #ffffff;
   border: 1px solid black;
   opacity: 0.8;
@@ -110,6 +112,22 @@ header{
 
 .round img {
 	max-width: 100%;
+}
+
+/**************************EDUCATION PAGE STYLES************************************/
+article ul li {
+  margin-left: 5%;
+  font-size: 1em;
+  font-weight: bold;
+  color: #568492;
+}
+
+.button {
+  background: #568492;
+  color: white;
+  padding: 2%;
+	text-align: center;
+  text-decoration: none;
 }
 
 /******************START MIN-WIDTH 320 MEDIA QUERY********************************/
@@ -127,6 +145,16 @@ header{
     padding: 30% 5% 5% 8%;
   }
 
+	.education-left,
+	.education-right {
+		max-width: 90%;
+	}
+
+	.button {
+		display: flex;
+		justify-content: center;
+		margin: 2%;
+	}
 }
 /******************START MIN-WIDTH 660 MEDIA QUERY********************************/
 @media (min-width: 660px) {
@@ -147,13 +175,19 @@ header{
 		padding: 5%;
 		margin-top: 15%;
 	}
+
+	.button {
+		display: flex;
+		justify-content: center;
+	}
 }
 /******************END MIN-WIDTH 660 MEDIA QUERY********************************/
 
 /******************START MIN-WIDTH 1117 MEDIA QUERY********************************/
 @media (min-width: 1117px) {
 
-	body {
+	body,
+	.edu-summary {
 		display: flex;
 		flex-wrap: wrap;
 	}
@@ -169,5 +203,16 @@ header{
 		max-width: 30%;
 		margin: 2%;
 		padding: 6%;
+	}
+
+	.education-left,
+	.education-right {
+		max-width: 37%;
+		margin: 2% 3%;
+	}
+
+	.button {
+		display: flex;
+		justify-content: center;
 	}
 }
