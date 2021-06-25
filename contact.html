@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Alexandra Lejarza</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Quicksand&display=swap" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="css/styles.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+
+  <body class="contact-me">
+    <header>
+  <button class="hamburger">&#9776;</button>
+  <button class="cross">&#735;</button>
+</header>
+
+<nav class="menu">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="career.html">Career</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="contact.html">Contact Me</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section class="contact">
+  <h1>Talk to me!</h1>
+  <h2>Fill out the fields below to send me a message.</h2>
+  </section>
+
+  <form class="contact-form" id="test_form" name="test_form" method="POST" action="form.php" onsubmit="return validateForm(this)">
+    <div class="first-name input-section">
+      <label for="firstname" class="label_input_wrap">First Name:</label>
+      <input type="text" name="req_firstname" id="firstname" placeholder="ex. John">
+    </div>
+
+    <div class="last-name input section">
+      <label for="lastname" class="label_input_wrap">Last Name:</label>
+      <input type="text" name="lastname" id="lastname" placeholder="ex. Smith"/>
+    </div>
+
+    <div class="email input-section">
+      <label for="email" class="label_input_wrap">Email:</label>
+      <input type="email" name="req_email" id="email" placeholder="jsmith@example.com"/>
+    </div>
+
+    <div class="telephone input-section">
+      <label for="telephone" class="label_input_wrap">Telephone:</label>
+      <input type="tel" name="telephone" id="telephone" placeholder="555-555-555">
+    </div>
+
+    <div class="location input-section">
+      <label for="location" class="label_input_wrap">Where are you from:</label>
+      <input type="text" name="location" id="location" placeholder="ex. Miami, FL">
+    </div>
+
+    <div class="comments input-section">
+      <label for="comments" class="label_input_wrap">Comments:</label>
+      <textarea name="comments" di="comments" cols="55" rows="5" placeholder="Your Comment Goes Here"></textarea>
+    </div>
+
+    <div class="submit">
+      <input type="submit" value="Submit">
+    </div>
+
+    <div class="reset">
+      <input type="reset" value="Refresh"/>
+    </div>
+
+  </form>
+
+  <p class="gmail">You can also send me an email at alexandralejarza@gmail.com</p>
+
+  <figure>
+  <img src="images/doggies.jpg" alt="Alex and Shih Tzus" class="dogs">
+  </figure>
+</main>
+
+
+
+<footer>Alexandra Lejarza 2021</footer>
+<script src="js/hamburger.js"></script>
+</body>
+</html>

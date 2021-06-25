@@ -173,6 +173,81 @@ article ul li {
   display: inline;
 	max-width: 1400px;
 }
+
+/****************************CONTACT PAGE STYLES*******************************/
+.contact-me {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.contact {
+	display: flex;
+	justify-content: center;
+}
+
+.contact-form {
+  background: #a8314b;
+  padding: 20px;
+  max-width: 600px;
+  border-radius: 4px;
+  color: white;
+  font-family: Quicksand;
+  margin: 0 auto;
+}
+
+.label_input_wrap {
+  display: block;
+}
+
+label {
+  font-weight: bold;
+}
+
+.reset input,
+.submit input {
+  background: #568492;
+  color: white;
+  padding: 5px 20px;
+  display: inline;
+}
+
+.reset,
+.submit {
+  display: inline;
+}
+
+.input-section {
+  margin-bottom: 15px;
+}
+
+input {
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+textarea {
+  font-family: sans-serif;
+  padding: 10px 10px;
+  border-radius: 4px;
+}
+
+select {
+  width: 185px;
+  padding: 8px 0;
+  border-radius: 4px;
+}
+
+.gmail {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.dogs {
+  border-radius: 50%;
+	max-width: 100%;
+	padding: 2%;
+}
+
 /******************START MIN-WIDTH 320 MEDIA QUERY*****************************/
 @media (min-width: 320px) {
 
@@ -208,6 +283,13 @@ article ul li {
 	.design-experience {
 		max-width: 80%;
 		margin-left: 6%;
+	}
+
+	.dogs {
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 85%;
+		margin-left: 5%;
 	}
 }
 /******************START MIN-WIDTH 660 MEDIA QUERY*****************************/
@@ -257,6 +339,15 @@ article ul li {
 	.design-experience {
 		max-width: 60%;
 		margin-left: 20%;
+	}
+
+	.dogs {
+	  border-radius: 50%;
+		padding: 2%;
+		max-width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: 60%;
 	}
 
 }
@@ -315,6 +406,15 @@ article ul li {
 	.design-experience {
 		max-width: 50%;
 		margin-left: 25%;
+	}
+
+	.dogs {
+	  border-radius: 50%;
+		padding: 5%;
+		max-width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: 65%;
 	}
 
 }
