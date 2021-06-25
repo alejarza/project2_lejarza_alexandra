@@ -48,6 +48,19 @@ footer {
   width: 100%;
   padding: 1%;
 }
+
+.aboutme,
+.education-left,
+.education-right,
+.experience,
+.design-experience {
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.8;
+  line-height: 150%;
+  padding: 2%;
+  margin: 4%;
+}
 /***************************HAMBURGER MENU STYLES******************************/
 body{
   font-family: 'Quicksand', sans-serif;
@@ -111,16 +124,8 @@ header{
   width: 100%;
 }
 
-.aboutme,
-.education-left,
-.education-right,
-.experience {
-  background-color: #ffffff;
-  border: 1px solid black;
-  opacity: 0.8;
-  line-height: 150%;
-  padding: 2%;
-  margin: 4%;
+.aboutme {
+	padding: 1%;
 }
 
 .round img {
@@ -135,6 +140,11 @@ article ul li {
   color: #568492;
 }
 
+.education-left,
+.education-right {
+	padding: 1%;
+}
+
 .button {
   background: #568492;
   color: white;
@@ -147,6 +157,21 @@ article ul li {
 .careers h3 {
 	font-family: 'Bree Serif', cursive;
 	font-style: italic;
+}
+
+/**************************PORTFOLIO PAGE STYLES*******************************/
+.design-experience {
+	padding: 1%;
+}
+
+.gallery img {
+	box-sizing: border-box;
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+  padding: 3%;
+  display: inline;
+	max-width: 1400px;
 }
 /******************START MIN-WIDTH 320 MEDIA QUERY*****************************/
 @media (min-width: 320px) {
@@ -178,6 +203,11 @@ article ul li {
 		max-width: 95%;
 		padding: 2%;
 		margin: 2%;
+	}
+
+	.design-experience {
+		max-width: 80%;
+		margin-left: 6%;
 	}
 }
 /******************START MIN-WIDTH 660 MEDIA QUERY*****************************/
@@ -224,6 +254,11 @@ article ul li {
 		flex-wrap: wrap;
 	}
 
+	.design-experience {
+		max-width: 60%;
+		margin-left: 20%;
+	}
+
 }
 /******************END MIN-WIDTH 660 MEDIA QUERY*******************************/
 
@@ -232,7 +267,8 @@ article ul li {
 
 	body,
 	.edu-summary,
-	.career {
+	.career,
+	.portfolio {
 		display: flex;
 		flex-wrap: wrap;
 	}
@@ -274,6 +310,11 @@ article ul li {
 		margin-left: 10%;
 		display: flex;
 		justify-content: flex-end;
+	}
+
+	.design-experience {
+		max-width: 50%;
+		margin-left: 25%;
 	}
 
 }
