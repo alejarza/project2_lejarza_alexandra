@@ -15,6 +15,7 @@
       <script src="js/html5shiv-printshiv.min.js"></script>
     <![endif]-->
 
+  <link href="lightbox/src/css/lightbox.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
 
@@ -22,6 +23,16 @@
     <header>
   <button class="hamburger">&#9776;</button>
   <button class="cross">&#735;</button>
+
+  <nav class="desktop-menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="career.html">Career</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact Me</a></li>
+    </ul>
+  </nav>
 </header>
 
 <nav class="menu">
@@ -54,8 +65,11 @@
   <a href="images/Artboard3-100.jpg" data-lightbox="image-1" data-title="Logo Concept 3"><img src="images/Artboard3-100.jpg" alt="Logo Concept 3"/></a>
   </section>
 
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+
 <footer>Alexandra Lejarza 2021</footer>
 <script src="js/hamburger.js"></script>
+<script src="js/mybutton.js"></script>
 <script src="lightbox/src/js/lightbox.js"></script>
 </body>
 </html>

@@ -9,109 +9,127 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
     display:block;
 }
 
-body {
+body{
   font-family: 'Quicksand', sans-serif;
+	margin:0;
+	width:100%;
+	height:100vh;
+  background:#ffffff;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
-
-header {
-  background: #a8314b;
-  text-align: right;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 99999;
+header{
+	width:100%;
+	background: #a8314b;
+	height:60px;
+	line-height:60px;
+	border-bottom:1px solid #dddddd;
 }
-
-header nav li {
-  display: inline-block;
-  max-width: 200px;
-  vertical-align: middle;
-  padding: 25px 0;
-}
-
-header nav a {
-  text-decoration: none;
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  left:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
   color: white;
-  margin: 0 20px;
-  font-size: 20px;
-  text-align: center;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  left: 0;
+  padding:7px 15px 0px 15px;
+  color: white;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:20%; background:#a8314b;  position:absolute; text-align: center; font-size:14px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block; background:#568492; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color: white;}
+.menu ul li a:hover {  color: #102d33; text-decoration:none;}
+.menu a{text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#666;}
+
+body {
+	font-family: 'Quicksand', sans-serif;
+	color: #102d33;
+}
+
+h1, h2 {
+	font-family: 'Bree Serif', cursive;
+  padding: 2%;
+	color: #102d33;
+}
+
+h1 {
+	font-size: 1.6em;
+}
+
+h2 {
+	font-size: 1.2em;
+}
+
+h3, h4, h5, h6 {
+	color: #568492;
+	font-size: .9em;
+}
+
+p {
+  padding: 2%;
 }
 
 footer {
   background: #cb8699;
   color: white;
   text-align: center;
-  position: fixed;
   width: 100%;
-  bottom: 0;
-  padding: 10px;
-  z-index: 99999;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Bree Serif', serif;
-  color: #102d33;
-}
-
-h1 {
-  font-size: 25px;
-}
-
-h2 {
-  padding: 10px 0 20px 0;
-  font-size: 20px;
-}
-
-h3 {
-  font-size: 15px;
-  padding: 5px 0;
-  color: #568492;
-  font-style: italic;
-}
-
-p {
-  padding-top: 10px;
-  color: #102d33;
+  padding: 1%;
 }
 
 .aboutme,
-.education,
-.career,
-.portfolio {
+.education-left,
+.education-right,
+.experience,
+.design-experience {
   background-color: #ffffff;
   border: 1px solid black;
   opacity: 0.8;
-  max-width: 650px;
   line-height: 150%;
-}
-
-#container {
-  width: 100%;
-  margin: auto;
-}
-
-.inquiry {
-	top: 180px;
+  padding: 2%;
+  margin: 4%;
 }
 
 </style>
 
-<header>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="education.html">Education</a></li>
-      <li><a href="career.html">Career</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="contact.html">Contact Me</a></li>
-    </ul>
-  </nav>
+<body class="home">
+	<header>
+<button class="hamburger">&#9776;</button>
+<button class="cross">&#735;</button>
 </header>
+
+<nav class="menu">
+<ul>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="education.html">Education</a></li>
+	<li><a href="career.html">Career</a></li>
+	<li><a href="portfolio.html">Portfolio</a></li>
+	<li><a href="contact.html">Contact Me</a></li>
+</ul>
+</nav>
 
 <div class="inquiry">
   <h1>Thank you for your inquiry</h1>
